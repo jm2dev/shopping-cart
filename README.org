@@ -26,6 +26,10 @@ The shop decides to introduce two new offers
 
 Update your checkout functions accordingly
 
+* Assumptions
+
+Input should a comma separated list of oranges ('Orange') and apples ('Apple). Anything else will be reported as an error to appear instead of the cost.
+
 * Requirements
 
 - java 8 sdk
