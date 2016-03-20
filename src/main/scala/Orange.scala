@@ -1,7 +1,7 @@
 package com.jm2dev.hmrc
 
-class Orange(quantity: Int) extends Fruit(quantity, 0.25f) {
-  override val cost: Float = new Fruit(offeredQuantity(), 0.25f).cost
+class Orange(quantity: Int) extends Fruit(quantity, BigDecimal(0.25)) {
+  override val cost: BigDecimal = new Fruit(offeredQuantity(), BigDecimal(0.25)).cost
 
   private def offeredQuantity() = {
     val groups = Math.floorDiv(quantity, 3)
